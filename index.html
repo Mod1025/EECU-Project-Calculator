@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EECU App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div><img src="#"img></div>
+            <div>
+                <img src="./img/logo-eecu-white 1.svg" alt="Logo">
+            </div>
                 <a href="#"> Savings & Checkings </a> 
                 <a href="#"> Loads & Credit Cards </a> 
                 <a href="#"> Online & Mobile </a> 
@@ -23,37 +28,36 @@
     </section>
     <main> 
         <div class="tax-bud" >
-            <label for="tax">Your Career & Tax Deductions:</label>
+            <h2 class="Label" for="tax">Your Career & Tax Deductions:</h2>
+            <label for="user">Select your career</label>
+            <select name="tax" id="tax">
+                <option value="">--Please choose a career--</option>
+            </select>
                 <table class="tax">
                     <tr>
                         <th>Career</th>
                         <th>Tax Deductions</th>
                     </tr>
                     <tr>
-                        <td>Teacher</td>
-                        <td>$5000</td>
+                        <td>Medicare</td>
+                        <td>1.45%</td>
                     </tr>
                     <tr>
-                        <td>Doctor</td>
-                        <td>$10000</td>
+                        <td>Social Security</td>
+                        <td>6.2%</td>
                     </tr>
                     <tr>
-                        <td>Engineer</td>
-                        <td>$7000</td>
+                        <td>Federal Income Tax</td>
+                        <td>Variable</td>
                     </tr>
                     <tr>
-                        <td>Artist</td>
-                        <td>$3000</td>
+                        <td>State Tax</td>
+                        <td>4%</td>
                     </tr>
-            <select name="tax" id="tax">
-                <option value="">Select your career
                 </table>
-            </option>
-            </select>
             
             <label for="budg">Your Monthly Budget:</label>
             <select name="budg" id="budg">
-
             </select>
         </div> 
     <section id="Pie Chart">
